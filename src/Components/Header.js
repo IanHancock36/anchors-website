@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = styled.nav`
 height 60px;
-background: #000;
+background: transparent;
 padding: 0rem; calc((100vw-1300px)/2);
 display: flex; 
 justify-content: space-between;
