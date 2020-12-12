@@ -1,20 +1,26 @@
 
 import './App.css';
-import { Switch, Route, useLocation} from 'react-router-dom'
+import {BrowserRouter as Router ,Switch, Route} from 'react-router-dom'
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
-import styled from 'styled-components'
+import {AnimatePresence} from 'framer-motion';
+import GlobalStyle from './globalStyle';
+
+
 
 function App() {
-  let location = useLocation();
+  
   return (
     <Router>
-      <Switch location={location} key={location.pathname}>
-        <Route path = "/" exact component = {Home} />
-        <Route path = "About" component = {About} />
-        <Route path = "Products" component = {Products} />
+      <GlobalStyle />
+      <AnimatePresence>
+      <Switch >
+        <Route path = '/' exact component = {Home} />
+        <Route path = 'about' component = {About} />
+        <Route path = 'products' component = {Products} />
         </Switch>
+        </AnimatePresence>
       </Router>
      
   

@@ -6,7 +6,7 @@ const Products = () => {
     return (
         <>
             <Header/>
-            <Hero image ={Image} /> 
+            <Hero image ={Image}  title='HEY There' desc='Howdy'/> 
             Products
         </>
     )

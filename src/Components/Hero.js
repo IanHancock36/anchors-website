@@ -35,7 +35,7 @@ button {
     font-size: clamp(0.8rem, 4vw, 1.2rem);
     padding: 0.8rem 2rem;
     color: #000;
-    background: #ffb347;
+    background: #71eeb8;
     background: linear-gradient(to right, #ffcc33, #ffb347);
     border: none;
     border-radius: 4px;
@@ -45,13 +45,13 @@ button {
 `;
 
 
-const Hero = ({image}) => {
+const Hero = ({image, title, desc}) => {
     return (
         <Section image = {image}>
             <Container>
-                <h1>title</h1>
-                <p>Description</p>
-                <button>Learn More</button>
+                <h1>{title}</h1>
+                <p>{desc}</p>
+                <button>Shop Now</button>
             </Container>
         </Section>
         
